@@ -5,11 +5,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <script defer src="./js/slider.js"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body class="page">
 
+    <header class="header">
+        <video class="header__video" src="./src/video-bg.mp4" type="video/mp4" autoplay muted loop></video>
+        <div class="container">
+
+            <div class="product">
+                <h1 class="product__title">Product name</h1>
+                <div class="product__about">
+                    <div class="product__advantages">
+                        <span class="product__advantage">Lorem, ipsum dolor.</span>
+                        <span class="product__advantage">Lorem, ipsum dolor.</span>
+                        <span class="product__advantage">Lorem, ipsum dolor.</span>
+                        <a href="#" class="product__buy">Купить</a>
+                    </div>
+                    <img src="./src/prod.png" alt="product" class="product__image">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="composition">
+        <div class="container">
+            <h2 class="subtitle">Product composition</h2>
+            <div class="composition__content">
+                <div class="composition__elements">
+                    <div class="composition__element">
+                        <div class="composition__element-header">
+                            <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                            <span class="composition__element-title">Lorem ipsum dolor</span>
+                        </div>
+                        <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                    </div>
+                    <div class="composition__element">
+                        <div class="composition__element-header">
+                            <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                            <span class="composition__element-title">Lorem ipsum dolor</span>
+                        </div>
+                        <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                    </div>
+                    <div class="composition__element">
+                        <div class="composition__element-header">
+                            <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                            <span class="composition__element-title">Lorem ipsum dolor</span>
+                        </div>
+                        <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                    </div>
+                </div>
+                <div class="composition__product">
+                    <img src="./src/prod.png" alt="product" class="composition__image-product">
+                </div>
+                <div class="composition__elements">
+                    <div class="composition__element">
+                        <div class="composition__element-header">
+                            <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                            <span class="composition__element-title">Lorem ipsum dolor</span>
+                        </div>
+                        <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                    </div>
+                    <div class="composition__element">
+                        <div class="composition__element-header">
+                            <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                            <span class="composition__element-title">Lorem ipsum dolor</span>
+                        </div>
+                        <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                    </div>
+                    <div class="composition__element">
+                        <div class="composition__element-header">
+                            <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                            <span class="composition__element-title">Lorem ipsum dolor</span>
+                        </div>
+                        <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="slider-head">
+                        <h2 class="slider-title">Feedback</h2>
+                        <div class="slider-elements">
+                            <div class="slider-progress">
+                                <div class="slider-progress-current"></div>
+                                <div class="slider-progress-line"></div>
+                            </div>
+                            <div class="slider-buttons">
+                                <button class="btn-prev"><img src="./src/prev.svg" alt="prev"></button>
+                                <button class="btn-next"><img src="./src/next.svg" alt="next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-track">
+                        <div class="slider-item">
+                            <div class="composition__element-header">
+                                <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                                <span class="composition__element-title">Lorem ipsum dolor</span>
+                            </div>
+                            <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                        </div>
+                        <div class="slider-item">
+                            <div class="composition__element-header">
+                                <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                                <span class="composition__element-title">Lorem ipsum dolor</span>
+                            </div>
+                            <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                        </div>
+                        <div class="slider-item">
+                            <div class="composition__element-header">
+                                <img src="./src/doctor.png" alt="element" class="composition__element-image">
+                                <span class="composition__element-title">Lorem ipsum dolor</span>
+                            </div>
+                            <p class="composition__info-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum eaque commodi eius facere molestiae harum ex quo temporibus dolores iste quae molestias qui perspiciatis distinctio, maxime cumque. Eius, ullam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__content">
+                <img src="./src/doctor.png" alt="doctor" class="promo-image">
+                <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsa perferendis aliquam dolore, ut provident quis, inventore, cum quia laboriosam dignissimos beatae blanditiis ea? Repudiandae harum adipisci doloremque soluta a! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium quia magni ratione provident asperiores voluptate fugiat debitis dolores eaque rem amet dolor ipsam sed esse deserunt, blanditiis veniam? Laudantium!</p>
+            </div>
+            <div class="promo__property-items">
+                <span class="promo__property-item">Lorem</span>
+                <span class="promo__property-item">Ipsum</span>
+                <span class="promo__property-item">Dolor</span>
+            </div>
+            <a href="#" class="product__buy">Купить</a>
+        </div>
+    </section>
+
+
+    <section class="order-form">
+        <div class="container">
+            <h2 class="subtitle">LevelUp</h2>
+            <span class="timer">30:00</span>
+            <div class="order-form__content">
+                <form action="#" class="form">
+                    <input type="text" class="form__input _name" placeholder="Name">
+                    <input type="text" class="form__input _phone" placeholder="Phone">
+                    <input type="submit" class="furm__submit  " value="Buy">
+                </form>
+                <img src="./src/prod.png" alt="prod" class="product-image">
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

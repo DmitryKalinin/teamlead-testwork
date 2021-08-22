@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+
+$main-color: #527CCD;
+
+.slider-container
+    color: $main-color
+    font-family: 'Roboto', sans-serif
+    overflow: hidden
+    width: 1200px
+    margin: 0 auto
+    .slider-head
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 20px
+        .slider-title
+            font-weight: 700
+            font-size: 50px;
+        .slider-elements
+            display: flex
+            align-items: center           
+            .slider-progress
+                display: none
+                width: 360px
+                margin-right: 40px
+                height: 2px                
+                .slider-progress-line
+                    width: 100%;
+                    height: 1px
+                    background-color: #C8D9FB
+                .slider-progress-current
+                    position: absolute
+                    height: 1px
+                    background-color: $main-color
+        button
+            width: 60px
+            height: 60px
+            color: $main-color
+            background-color: #fff
+            border: 1px solid #C8D9FB
+            transition: 0.5s
+        button:hover:enabled
+            background-color: #C8D9FB
+            border: none
+            cursor: pointer
+            transition: 0.5s
+        button:disabled
+            color: #ccc
+            border: 1px solid #ccc
+    .slider-track
+        display: flex
+        justify-content: start
+        align-items: space-between   
+        cursor: pointer
+        .slider-item
+            display: flex
+            flex-direction: column
+            padding: 20px
+            margin: 0 20px
+            min-width: 1160px
+            box-sizing: border-box
+            border: 1px solid $main-color
+            user-select: none
+            .slider-item-date
+                margin: 10px 0
+                font-size: 12px
+            .slider-item-title
+                margin: 0
+                font-weight: normal
+                font-size: 16px
+                line-height: 26px
+            .slider-item-text
+                font-size: 12px
+                line-height: 22px
+            img
+                pointer-events: none
+
+@media screen and (max-width: 1366px) 
+    .slider-container
+        width: 900px
+        .slider-track
+            .slider-item
+                min-width: 860px
+        
+@media screen and (max-width: 1000px) 
+    .slider-container
+        width: 600px    
+        .slider-track
+            .slider-item
+                min-width: 560px
+        .slider-head
+            .slider-title
+                font-size: 30px 
+            .slider-elements
+                .slider-progress
+                    width: 300px  
+                .slider-buttons
+                    display: none 
+@media screen and (max-width: 700px) 
+    .slider-container
+        width: 320px    
+        .slider-track
+            .slider-item
+                min-width: 260px
+        .slider-head
+            flex-direction: column 
+            .slider-title
+                font-size: 30px 
+            .slider-elements
+                padding-bottom: 20px
+                .slider-progress
+                    width: 300px  
+                .slider-buttons
+                    display: none    
