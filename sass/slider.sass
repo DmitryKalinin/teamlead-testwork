@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
 
-$main-color: #527CCD;
+$main-color: #662763;
 
 .slider-container
     color: $main-color
@@ -27,7 +27,7 @@ $main-color: #527CCD;
                 .slider-progress-line
                     width: 100%;
                     height: 1px
-                    background-color: #C8D9FB
+                    background-color: #ebc8fb
                 .slider-progress-current
                     position: absolute
                     height: 1px
@@ -35,12 +35,12 @@ $main-color: #527CCD;
         button
             width: 60px
             height: 60px
-            color: $main-color
+            color: #000
             background-color: #fff
-            border: 1px solid #C8D9FB
+            border: 1px solid #fbdbc849
             transition: 0.5s
         button:hover:enabled
-            background-color: #C8D9FB
+            background-color: #fbdbc849
             border: none
             cursor: pointer
             transition: 0.5s
@@ -55,11 +55,13 @@ $main-color: #527CCD;
         .slider-item
             display: flex
             flex-direction: column
+            color: #000
             padding: 20px
             margin: 0 20px
             min-width: 1160px
             box-sizing: border-box
             border: 1px solid $main-color
+            border-radius: 10px
             user-select: none
             .slider-item-date
                 margin: 10px 0
@@ -94,8 +96,7 @@ $main-color: #527CCD;
             .slider-elements
                 .slider-progress
                     width: 300px  
-                .slider-buttons
-                    display: none 
+                
 @media screen and (max-width: 700px) 
     .slider-container
         width: 320px    
@@ -110,5 +111,4 @@ $main-color: #527CCD;
                 padding-bottom: 20px
                 .slider-progress
                     width: 300px  
-                .slider-buttons
-                    display: none    
+               

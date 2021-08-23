@@ -11,10 +11,8 @@ class Slider {
 
 
             this.widthItem = this.items[0] && this.items[0].clientWidth + 2; //+2 - это border у .slider-item
-            console.log(this.widthItem);
             this.position = 0; // Номер элемента, стоящего на первой позиции
-            this.slidesToShow = this.getSlideToShow();
-            console.log(this.slidesToShow); // количество отобрахаемых плиток
+            this.slidesToShow = this.getSlideToShow(); // количество отобрахаемых плиток
             this.maxPosition = this.items.length - this.slidesToShow; //номер последнего элемента, который может быть на первой позиции
             this.progressLine.style.width = `${this.progress.clientWidth / (this.maxPosition+1)}px`; //ширина для прогресс-бара
 

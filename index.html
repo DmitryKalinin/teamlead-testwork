@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/slider.css">
     <script defer src="./js/slider.js"></script>
+    <script defer src="./js/main.js"></script>
     <title>Document</title>
 </head>
 
@@ -16,15 +17,23 @@
     <header class="header">
         <video class="header__video" src="./src/video-bg.mp4" type="video/mp4" autoplay muted loop></video>
         <div class="container">
-
+            <nav class="nav">
+                <a href="#" class="nav__logo">LevelUp</a>
+                <div class="menu">
+                    <a href="#composition" class="nav__item">Composition</a>
+                    <a href="#feedback" class="nav__item">Feedback</a>
+                    <a href="#promo" class="nav__item">Promo</a>
+                </div>
+                <a href="#form" class="nav__item nav__buy">Buy</a>
+            </nav>
             <div class="product">
-                <h1 class="product__title">Product name</h1>
+                <h1 class="product__title">LevelUp</h1>
                 <div class="product__about">
                     <div class="product__advantages">
                         <span class="product__advantage">Lorem, ipsum dolor.</span>
                         <span class="product__advantage">Lorem, ipsum dolor.</span>
                         <span class="product__advantage">Lorem, ipsum dolor.</span>
-                        <a href="#" class="product__buy">Купить</a>
+                        <a href="#form" class="product__buy">Купить</a>
                     </div>
                     <img src="./src/prod.png" alt="product" class="product__image">
                 </div>
@@ -33,7 +42,7 @@
 
     </header>
 
-    <section class="composition">
+    <section id="composition" class="composition page__offset">
         <div class="container">
             <h2 class="subtitle">Product composition</h2>
             <div class="composition__content">
@@ -90,7 +99,7 @@
         </div>
     </section>
 
-    <section class="feedback">
+    <section id="feedback" class="feedback page__offset">
         <div class="container">
             <div class="slider">
                 <div class="slider-container">
@@ -135,34 +144,40 @@
         </div>
     </section>
 
-    <section class="promo">
+    <section id="promo" class="promo page__offset">
         <div class="container">
+            <h2 class="subtitle">Promo</h2>
             <div class="promo__content">
                 <img src="./src/doctor.png" alt="doctor" class="promo-image">
                 <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsa perferendis aliquam dolore, ut provident quis, inventore, cum quia laboriosam dignissimos beatae blanditiis ea? Repudiandae harum adipisci doloremque soluta a! Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium quia magni ratione provident asperiores voluptate fugiat debitis dolores eaque rem amet dolor ipsam sed esse deserunt, blanditiis veniam? Laudantium!</p>
+                    ipsum dolor sit amet consectetur adipisicing elit.<br><br> Ad accusantium quia magni ratione provident asperiores voluptate fugiat debitis dolores eaque rem amet dolor ipsam sed esse deserunt, blanditiis veniam? Laudantium!</p>
             </div>
             <div class="promo__property-items">
                 <span class="promo__property-item">Lorem</span>
                 <span class="promo__property-item">Ipsum</span>
                 <span class="promo__property-item">Dolor</span>
+                <a href="#form" class="product__buy">Buy</a>
             </div>
-            <a href="#" class="product__buy">Купить</a>
         </div>
     </section>
 
 
-    <section class="order-form">
+    <section id="form" class="order-form page__offset">
         <div class="container">
             <h2 class="subtitle">LevelUp</h2>
             <span class="timer">30:00</span>
             <div class="order-form__content">
                 <form action="#" class="form">
-                    <input type="text" class="form__input _name" placeholder="Name">
-                    <input type="text" class="form__input _phone" placeholder="Phone">
-                    <input type="submit" class="furm__submit  " value="Buy">
+                    <h3 class="form-title">Fill out the form</h3>
+                    <input type="text" class="form__input _name" name="name" placeholder="Name">
+                    <input type="text" class="form__input _phone" name="phone" placeholder="Phone">
+                    <input type="submit" class="form__submit" value="Buy">
                 </form>
-                <img src="./src/prod.png" alt="prod" class="product-image">
+                <div class="buy-image">
+                    <img src="./src/prod.png" alt="prod" class="product-image">
+                    <span class="last-price"> &nbsp;5000&nbsp; </span>
+                    <span class="new-price">2990</span>
+                </div>
             </div>
         </div>
     </section>
